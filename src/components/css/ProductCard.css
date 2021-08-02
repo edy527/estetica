@@ -1,0 +1,115 @@
+.SiteContainer{
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+}
+.ArticleContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
+}
+.ArticleImg{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.ArticleImg img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+.ArticleCard{
+    background: white;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.ArticleCard:hover{
+    box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
+    cursor: pointer;
+}
+.ArticleContent{
+    padding: 1rem 2rem;
+}
+.ArticleContent .CardCategory{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #6b82a7;
+    display: block;
+    text-decoration: none;
+}
+
+.ArticleContent .CardTitle{
+    margin: 1rem 0;
+    color: #22447b;
+}
+
+.ArticleContent .CardExcerpt{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #6b82a7;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .SiteContainer{
+        max-width: 608px;
+    }
+    .ArticleCard{
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+}
+@media screen and (min-width: 1280px){
+    .SiteContainer{
+        max-width: 1156px;
+    }
+}
+
+
+/* CARD BTN */
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.CustomBtn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.Btn{
+  background: #000;
+  color: #fff;
+  z-index: 1;
+}
+.Btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+   background: #e0e5ec;
+  transition: all 0.3s ease;
+}
+.Btn:hover {
+  color: #000;
+}
+.Btn:hover:after {
+  left: 0;
+  width: 100%;
+}
+.Btn:active {
+  top: 2px;
+}
