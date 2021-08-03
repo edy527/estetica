@@ -2,7 +2,7 @@
 //un listado de categorias clickeables (p)
 //incorporar alguna libreria de estilos con bootstrap u otro (OPCIONAL)
 import React from 'react';
-
+import CartWindget from './CartWindget';
 
 function NavBar(props) {
     return (
@@ -13,8 +13,7 @@ function NavBar(props) {
           <a href="./">Solares</a>
           <a href="./">Tratamientos</a>
           <a href="./">Escribinos</a>
-          { props.children }
-          
+          <CartWindget/>    
       </nav> 
 
     );
