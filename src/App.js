@@ -4,7 +4,7 @@ import NavBar from './components/NavBar';
 import ProductCard from './components/ProductCard';
 import logo from './img/logooo.png'
 import ItemListContainer from './components/ItemListContainer'
-import BtnCount from './components/BtnCount'
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       </header>
       <ItemListContainer/>
       <ProductCard/>
-      <BtnCount/>
+      
     </div>
   );
 }
