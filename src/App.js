@@ -15,8 +15,6 @@ function App() {
         <NavBar/>
       </header>
       <ItemListContainer/>
-      <ProductCard/>
-      
     </div>
   );
 }
