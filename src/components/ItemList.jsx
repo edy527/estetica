@@ -63,6 +63,7 @@ export default function ItemList(){
     }, []);
 
     return(
+        
         <div className="CardContainer">
             {products.map((cadaitem)=>(
                 <Item 
@@ -75,16 +76,7 @@ export default function ItemList(){
                 
             ))}
 
-{products.map((cadaitem)=>(
-                <ItemDetail 
-                title={cadaitem.title}
-                stock={cadaitem.stock}
-                description={cadaitem.description}
-                pictureUrl={cadaitem.pictureUrl}
-                price={cadaitem.price}
-                />
-                
-            ))}
+
       </div>  
     )
 }

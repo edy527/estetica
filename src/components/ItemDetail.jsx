@@ -4,6 +4,7 @@ import './css/ItemDetail.css'
 
 function ItemDetail(props) {
   return (
+      
     <div className="Wrapper">
       <div className="ProductImg">
         <img className="ProductImg-img" src={props.pictureUrl} alt='Imagen de producto'/>
@@ -25,6 +26,7 @@ function ItemDetail(props) {
         </div>
       </div>
     </div>
+    
   );
 }
 
