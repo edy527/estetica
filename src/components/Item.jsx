@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../img/gel-de-limpieza-p.jpg";
+
 //import ProductCard from './ProductCard'
 
 export default function Item(props) {
@@ -9,13 +9,13 @@ export default function Item(props) {
         <div className="ArticleContainer">
           <article className="ArticleCard">
             <figure className="ArticleImg">
-              <img src={image} alt="Gel de limpieza LACA" />
+              <img src={props.pictureUrl} alt="Gel de limpieza LACA" />
             </figure>
             <div className="ArticleContent">
               <a href="./" className="CardCategory">
-                {props.name}
+                ${props.price}
               </a>
-              <h3 className="CardTitle">Gel de limpieza protector</h3>
+              <h3 className="CardTitle">{props.title}</h3>
               <p className="CardExcerpt">{props.description}</p>
             </div>
             <div className="BtnContainer">
