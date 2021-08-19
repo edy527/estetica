@@ -1,10 +1,10 @@
 
 import './App.css';
 import NavBar from './components/NavBar';
+import ProductCard from './components/ProductCard';
 import logo from './img/logooo.png'
 import ItemListContainer from './components/ItemListContainer'
-import ItemDetailContainer from './components/ItemDetailContainer';
-
+import BtnCount from './components/BtnCount'
 
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
         <NavBar/>
       </header>
       <ItemListContainer/>
-      <ItemDetailContainer/>
+      <ProductCard/>
+      <BtnCount/>
     </div>
   );
 }

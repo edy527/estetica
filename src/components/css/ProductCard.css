@@ -3,10 +3,9 @@
     max-width: calc(100% - 80px);
 }
 .ArticleContainer{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 2rem;
 }
 .ArticleImg{
     margin: 0;
