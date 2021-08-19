@@ -1,10 +1,15 @@
 import './App.css';
 
 import NavBar from './components/NavBar';
+import ProductCard from './components/ProductCard';
 import logo from './img/logooo.png'
 import ItemListContainer from './components/ItemListContainer'
+<<<<<<< HEAD
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter as Router, Switch, Route, BrowserRouter} from "react-router-dom";
+=======
+
+>>>>>>> parent of 8d5e131 (edgardo david beltran entrega Numero 7)
 
 
 function App() {
@@ -17,6 +22,7 @@ function App() {
         <img src={logo} alt="Logo"/>
         <NavBar/>
       </header>
+<<<<<<< HEAD
       </div>
       
         <Switch>
@@ -28,6 +34,10 @@ function App() {
     
     
     </>
+=======
+      <ItemListContainer/>
+    </div>
+>>>>>>> parent of 8d5e131 (edgardo david beltran entrega Numero 7)
   );
 }
 

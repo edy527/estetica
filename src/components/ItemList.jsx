@@ -11,42 +11,23 @@ export default function ItemList(){
     useEffect(() =>{
         
         new Promise((resolve, reject) => {
-            
             const data=[
-               
+                
                 {
                     id: '1',
-                    title: 'Producto 1',
-                    description: 'Texto descriptivo producto',
-                    price: 132456,
+                    name: 'Producto 1',
                     stock: 2,
-                    pictureUrl:'https://picsum.photos/200'
-
-                    
-                },
-                {
-                    id: '1',
-                    title: 'Producto 2',
-                    description: 'Texto descriptivo producto',
-                    price: 6700,
-                    stock: 2,
-                    pictureUrl:"../img/gel.jpg"
+                    description: 'Alto gel de limpieza!'
                 },
                 {
                     id: '2',
-                    title: 'Producto 3',
-                    description: 'Texto descriptivo producto',
-                    price: 1000,
-                    stock: 2,
-                    pictureUrl:'../img/gel-de-limpieza-p.jpg'
+                    name: 'Producto 2',
+                    stock: 2
                 },
                 {
                     id: '3',
-                    title: 'Producto 4',
-                    description: 'Texto descriptivo producto',
-                    price: 500,
-                    stock: 2,
-                    pictureUrl:'../img/gel-de-limpieza-p.jpg'
+                    name: 'Producto 3',
+                    stock: 2
                 }
             ];
             setTimeout(() => resolve(data), 3000);
@@ -62,17 +43,29 @@ export default function ItemList(){
     }, []);
 
     return(
-        
         <div className="CardContainer">
             {products.map((cadaitem)=>(
                 <Item 
+                name={cadaitem.name}
+                stock={cadaitem.stock}
+                description={cadaitem.description}
+                />
+            ))}
+<<<<<<< HEAD
+        </div>  
+=======
+
+{products.map((cadaitem)=>(
+                <ItemDetail 
                 title={cadaitem.title}
                 stock={cadaitem.stock}
                 description={cadaitem.description}
                 pictureUrl={cadaitem.pictureUrl}
                 price={cadaitem.price}
                 />
+                
             ))}
-        </div>  
+      </div>  
+>>>>>>> parent of 976f0a4 (desafio calse 7)
     )
 }
