@@ -1,6 +1,5 @@
 import Item from './Item';
 import './css/CardContainer.css'
-import ItemDetail from './ItemDetail';
 
 const {useEffect, useState} = require('react')
 
@@ -73,10 +72,7 @@ export default function ItemList(){
                 pictureUrl={cadaitem.pictureUrl}
                 price={cadaitem.price}
                 />
-                
             ))}
-
-
-      </div>  
+        </div>  
     )
 }
