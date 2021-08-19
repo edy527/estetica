@@ -50,10 +50,11 @@ export default function ItemList(){
                 stock={cadaitem.stock}
                 description={cadaitem.description}
                 />
+
             ))}
-<<<<<<< HEAD
+
         </div>  
-=======
+
 
 {products.map((cadaitem)=>(
                 <ItemDetail 
@@ -64,8 +65,9 @@ export default function ItemList(){
                 price={cadaitem.price}
                 />
                 
+
             ))}
       </div>  
->>>>>>> parent of 976f0a4 (desafio calse 7)
+
     )
 }
