@@ -2,17 +2,18 @@
 //un listado de categorias clickeables (p)
 //incorporar alguna libreria de estilos con bootstrap u otro (OPCIONAL)
 import React from 'react';
+import {Link} from 'react-router-dom';
 import CartWindget from './CartWindget';
 
-function NavBar(props) {
+function NavBar() {
     return (
      
       <nav>
-          <a href="./">Rostro</a>
-          <a href="./">Cuerpo</a>
-          <a href="./">Solares</a>
-          <a href="./">Tratamientos</a>
-          <a href="./">Escribinos</a>
+          <Link to="/">Rostro</Link>
+          <Link to="/">Cuerpo</Link>
+          <Link to="/">Solares</Link>
+          <Link to="/">Tratamientos</Link>
+          <Link to="/">Escribinos</Link>
           <CartWindget/>    
       </nav> 
 

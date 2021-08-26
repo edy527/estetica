@@ -9,7 +9,8 @@ export default function ItemList({products}){
         <div className="CardContainer">
             {products.map(cadaitem=>(
                 <Item
-                key = {cadaitem.id} 
+                key= {cadaitem.id}
+                id = {cadaitem.id} 
                 title={cadaitem.title}
                 stock={cadaitem.stock}
                 description={cadaitem.description}
